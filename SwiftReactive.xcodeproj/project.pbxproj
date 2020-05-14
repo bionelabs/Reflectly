@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		056D37CC246CD8EB0052F7B8 /* SwiftReactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056D37C2246CD8EA0052F7B8 /* SwiftReactive.framework */; };
+		056D37CC246CD8EB0052F7B8 /* Variable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056D37C2246CD8EA0052F7B8 /* Variable.framework */; };
 		056D37D1246CD8EB0052F7B8 /* SwiftReactiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D37D0246CD8EB0052F7B8 /* SwiftReactiveTests.swift */; };
 		056D37D3246CD8EB0052F7B8 /* SwiftReactive.h in Headers */ = {isa = PBXBuildFile; fileRef = 056D37C5246CD8EA0052F7B8 /* SwiftReactive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		056D3816246CD96C0052F7B8 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3812246CD96C0052F7B8 /* Store.swift */; };
@@ -24,7 +24,8 @@
 		056D3829246CD9810052F7B8 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D3824246CD9810052F7B8 /* Future.swift */; };
 		056D382D246CD98C0052F7B8 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D382A246CD98B0052F7B8 /* Subscriber.swift */; };
 		056D382E246CD98C0052F7B8 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D382B246CD98C0052F7B8 /* Signal.swift */; };
-		056D382F246CD98C0052F7B8 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D382C246CD98C0052F7B8 /* Variable.swift */; };
+		056D382F246CD98C0052F7B8 /* Genenic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056D382C246CD98C0052F7B8 /* Genenic.swift */; };
+		05996F06246D9E22008271D4 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05996F05246D9E22008271D4 /* Variable.swift */; };
 		737C6AC5246CE9FF00B3179B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C6AC4246CE9FF00B3179B /* AppDelegate.swift */; };
 		737C6AC7246CE9FF00B3179B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737C6AC6246CE9FF00B3179B /* ViewController.swift */; };
 		737C6ACA246CE9FF00B3179B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 737C6AC8246CE9FF00B3179B /* Main.storyboard */; };
@@ -50,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		056D37C2246CD8EA0052F7B8 /* SwiftReactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftReactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		056D37C2246CD8EA0052F7B8 /* Variable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Variable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		056D37C5246CD8EA0052F7B8 /* SwiftReactive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftReactive.h; sourceTree = "<group>"; };
 		056D37C6246CD8EA0052F7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056D37CB246CD8EB0052F7B8 /* SwiftReactiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReactiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +71,8 @@
 		056D3824246CD9810052F7B8 /* Future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
 		056D382A246CD98B0052F7B8 /* Subscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		056D382B246CD98C0052F7B8 /* Signal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
-		056D382C246CD98C0052F7B8 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		056D382C246CD98C0052F7B8 /* Genenic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genenic.swift; sourceTree = "<group>"; };
+		05996F05246D9E22008271D4 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
 		737C6AC2246CE9FF00B3179B /* VariableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VariableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		737C6AC4246CE9FF00B3179B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		737C6AC6246CE9FF00B3179B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056D37CC246CD8EB0052F7B8 /* SwiftReactive.framework in Frameworks */,
+				056D37CC246CD8EB0052F7B8 /* Variable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +121,7 @@
 		056D37C3246CD8EA0052F7B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				056D37C2246CD8EA0052F7B8 /* SwiftReactive.framework */,
+				056D37C2246CD8EA0052F7B8 /* Variable.framework */,
 				056D37CB246CD8EB0052F7B8 /* SwiftReactiveTests.xctest */,
 				737C6AC2246CE9FF00B3179B /* VariableDemo.app */,
 			);
@@ -148,22 +150,23 @@
 		056D37DC246CD8F10052F7B8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				05996F04246D9E0F008271D4 /* Variable */,
 				056D3811246CD9600052F7B8 /* Object */,
 				056D3810246CD9570052F7B8 /* View */,
 				056D380F246CD94F0052F7B8 /* Promies */,
-				056D380E246CD9450052F7B8 /* Variable */,
+				056D380E246CD9450052F7B8 /* Genenic */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		056D380E246CD9450052F7B8 /* Variable */ = {
+		056D380E246CD9450052F7B8 /* Genenic */ = {
 			isa = PBXGroup;
 			children = (
 				056D382B246CD98C0052F7B8 /* Signal.swift */,
 				056D382A246CD98B0052F7B8 /* Subscriber.swift */,
-				056D382C246CD98C0052F7B8 /* Variable.swift */,
+				056D382C246CD98C0052F7B8 /* Genenic.swift */,
 			);
-			path = Variable;
+			path = Genenic;
 			sourceTree = "<group>";
 		};
 		056D380F246CD94F0052F7B8 /* Promies */ = {
@@ -199,6 +202,14 @@
 			path = Object;
 			sourceTree = "<group>";
 		};
+		05996F04246D9E0F008271D4 /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				05996F05246D9E22008271D4 /* Variable.swift */,
+			);
+			path = Variable;
+			sourceTree = "<group>";
+		};
 		737C6AC3246CE9FF00B3179B /* VariableDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,9 +237,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		056D37C1246CD8EA0052F7B8 /* SwiftReactive */ = {
+		056D37C1246CD8EA0052F7B8 /* Variable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 056D37D6246CD8EB0052F7B8 /* Build configuration list for PBXNativeTarget "SwiftReactive" */;
+			buildConfigurationList = 056D37D6246CD8EB0052F7B8 /* Build configuration list for PBXNativeTarget "Variable" */;
 			buildPhases = (
 				056D37BD246CD8EA0052F7B8 /* Headers */,
 				056D37BE246CD8EA0052F7B8 /* Sources */,
@@ -239,9 +250,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftReactive;
+			name = Variable;
 			productName = SwiftReactive;
-			productReference = 056D37C2246CD8EA0052F7B8 /* SwiftReactive.framework */;
+			productReference = 056D37C2246CD8EA0052F7B8 /* Variable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		056D37CA246CD8EB0052F7B8 /* SwiftReactiveTests */ = {
@@ -315,7 +326,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				056D37C1246CD8EA0052F7B8 /* SwiftReactive */,
+				056D37C1246CD8EA0052F7B8 /* Variable */,
 				056D37CA246CD8EB0052F7B8 /* SwiftReactiveTests */,
 				737C6AC1246CE9FE00B3179B /* VariableDemo */,
 			);
@@ -354,11 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05996F06246D9E22008271D4 /* Variable.swift in Sources */,
 				056D3816246CD96C0052F7B8 /* Store.swift in Sources */,
 				056D382E246CD98C0052F7B8 /* Signal.swift in Sources */,
 				056D382D246CD98C0052F7B8 /* Subscriber.swift in Sources */,
 				056D381E246CD9770052F7B8 /* UIButton+Action.swift in Sources */,
-				056D382F246CD98C0052F7B8 /* Variable.swift in Sources */,
+				056D382F246CD98C0052F7B8 /* Genenic.swift in Sources */,
 				056D381F246CD9770052F7B8 /* UIControlEvent.swift in Sources */,
 				056D3825246CD9810052F7B8 /* Future+Debounce.swift in Sources */,
 				056D3818246CD96C0052F7B8 /* Object.swift in Sources */,
@@ -394,12 +406,12 @@
 /* Begin PBXTargetDependency section */
 		056D37CE246CD8EB0052F7B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 056D37C1246CD8EA0052F7B8 /* SwiftReactive */;
+			target = 056D37C1246CD8EA0052F7B8 /* Variable */;
 			targetProxy = 056D37CD246CD8EB0052F7B8 /* PBXContainerItemProxy */;
 		};
 		737C6AD5246CEA1700B3179B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 056D37C1246CD8EA0052F7B8 /* SwiftReactive */;
+			target = 056D37C1246CD8EA0052F7B8 /* Variable */;
 			targetProxy = 737C6AD4246CEA1700B3179B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -563,7 +575,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.onebuffer.SwiftReactive;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Variable;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -590,7 +602,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.onebuffer.SwiftReactive;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Variable;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -689,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		056D37D6246CD8EB0052F7B8 /* Build configuration list for PBXNativeTarget "SwiftReactive" */ = {
+		056D37D6246CD8EB0052F7B8 /* Build configuration list for PBXNativeTarget "Variable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				056D37D7246CD8EB0052F7B8 /* Debug */,

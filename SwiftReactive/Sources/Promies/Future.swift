@@ -8,7 +8,7 @@
 
 public class Future<Value> {
     
-    typealias Result = Swift.Result<Value, Error>
+    public typealias Result = Swift.Result<Value, Error>
     
     internal var result: Result? {
         didSet { result.map(onChange) }
@@ -16,7 +16,7 @@ public class Future<Value> {
     
     private var callbacks = [(Result) -> Void]()
     
-    func observe(using callback: @escaping (Result) -> Void) {
+    public func observe(using callback: @escaping (Result) -> Void) {
         if let result = result {
             return callback(result)
         }

@@ -45,9 +45,9 @@ class Database {
         object?._pools.value.removeAll(where: { $0 == pool})
     }
     
-    func fetch(pool: String) -> Variable<[Object]> {
+    func fetch(pool: String) -> Genenic<[Object]> {
         let object = self.objects.filter { $0._pools.value.contains(pool)}
-        return Variable<[Object]>(object)
+        return Genenic<[Object]>(object)
     }
 }
 

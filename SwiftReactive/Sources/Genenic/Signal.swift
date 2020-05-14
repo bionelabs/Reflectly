@@ -16,7 +16,7 @@ internal class Signal<Value> {
         self.listener = listener
     }
     
-    func subscribe(genenic: Variable<Value>) {
+    func subscribe(genenic: Genenic<Value>) {
         genenic.subscribers.append(Subscriber(self))
     }
 }

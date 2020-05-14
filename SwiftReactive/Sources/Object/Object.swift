@@ -10,7 +10,7 @@ import UIKit
 
 /* Model */
 class Object {
-    var _pools: Variable<[String]> = Variable<[String]>([])
-    var _id: Variable<String> = Variable<String>("\(Date().timeIntervalSince1970)")
-    var _created_at: Variable<Date> = Variable<Date>(Date())
+    var _pools: Genenic<[String]> = Genenic<[String]>([])
+    var _id: Genenic<String> = Genenic<String>("\(Date().timeIntervalSince1970)")
+    var _created_at: Genenic<Date> = Genenic<Date>(Date())
 }
