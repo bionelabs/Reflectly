@@ -16,7 +16,58 @@ class ViewController: UIViewController {
         
         //self.testVarialbeOberver()
         self.testObservable()
+        //self.testPromies()
+        //self.testOptional()
         
+    }
+    
+    
+    func testOptional() {
+        let promies: Promise<String?> = Promise<String?>()
+        promies
+            .map { $0 }
+            .observe { (result) in
+                guard case let .success(vax) = result else { return }
+                print("result success:", vax)
+        }
+        
+        promies.resolve(nil)
+        promies.resolve("334")
+        promies.resolve("22")
+        promies.resolve("44")
+        promies.resolve("32")
+
+    }
+    
+    func testString() {
+        let promies = Promise.just("sdfsdf")
+        promies
+            .map { $0 + "0" }
+            .observe { (result) in
+                guard case let .success(vax) = result else { return }
+                print("result success:", vax)
+        }
+        promies.resolve("12")
+        promies.resolve("334")
+        promies.resolve("22")
+        promies.resolve("44")
+        promies.resolve("32")
+    }
+    
+    
+    func testPromies() {
+        let promies = Promise<Int>()
+        promies
+            .map { $0 + 1212 }
+            .observe { (result) in
+                guard case let .success(vax) = result else { return }
+                print("result success:", vax)
+        }
+        promies.resolve(12)
+        promies.resolve(334)
+        promies.resolve(22)
+        promies.resolve(44)
+        promies.resolve(32)
     }
     
     func testObservable() {
@@ -34,7 +85,7 @@ class ViewController: UIViewController {
         
         
         DispatchQueue.global(qos: .background).async {
-            variable.value = 3
+            variable.value = 7
             usleep(100 * 1000)
             variable.value = 2
             usleep(100 * 1000)
@@ -66,7 +117,7 @@ class ViewController: UIViewController {
         
         generic
             .asObservable()
-            .then {$0 + 100 }
+            .map { $0 + 100 }
             .debounce(interval: 200)
             .observe { event in
                 if case let .success(vax) = event {

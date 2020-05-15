@@ -33,12 +33,12 @@ extension Future {
     public func debounce(interval: Int) -> Future<Value> {
         let promise = Promise<Value>()
         let debounce: Debounce<Value> = self.debounce(interval: interval, queue: DispatchQueue.main) { (value: Value) in
-            promise.resolve(with: value)
+            promise.resolve(value)
         }
         observe { result in
             switch result {
             case .success(let value): debounce(value)
-            case .failure(let error): promise.reject(with: error)
+            case .failure(let error): promise.reject(error)
             }
         }
         return promise

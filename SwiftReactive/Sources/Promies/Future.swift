@@ -7,23 +7,23 @@
 //
 
 public class Future<Value> {
+
+    public typealias Event = Swift.Result<Value, Swift.Error>
     
-    public typealias Result = Swift.Result<Value, Error>
-    
-    internal var result: Result? {
+    internal var result: Event? {
         didSet { result.map(onChange) }
     }
     
-    private var callbacks = [(Result) -> Void]()
+    private var callbacks = [(Event) -> Void]()
     
-    public func observe(using callback: @escaping (Result) -> Void) {
+    public func observe(using callback: @escaping (Event) -> Void) {
         if let result = result {
             return callback(result)
         }
         callbacks.append(callback)
     }
     
-    private func onChange(result: Result) {
+    private func onChange(result: Event) {
         callbacks.forEach { $0(result) }
     }
 }

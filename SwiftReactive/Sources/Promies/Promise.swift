@@ -10,17 +10,23 @@ import UIKit
 
 public class Promise<Value>: Future<Value> {
     
-    public init(value: Value? = nil) {
+    public required init(_ value: Value? = nil) {
         super.init()
         result = value.map(Result.success)
     }
     
-    public func resolve(with value: Value) {
+    public func resolve(_ value: Value) {
         result = .success(value)
     }
     
-    public func reject(with error: Error) {
+    public func reject(_ error: Error) {
         result = .failure(error)
+    }
+}
+
+extension Promise {
+    public static func just(_ value: Value) -> Promise<Value> {
+        return Promise<Value>(value)
     }
 }
 

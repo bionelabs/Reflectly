@@ -7,10 +7,10 @@
 //
 
 extension Future {
-    public func then<T>(_ closure: @escaping (Value) throws -> T
+    public func map<T>(_ closure: @escaping (Value) throws -> T
     ) -> Future<T> {
          return chained { value in
-             try Promise(value: closure(value))
+             try Promise(closure(value))
         }
     }
 }

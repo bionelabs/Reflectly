@@ -43,7 +43,7 @@ extension Genenic {
     public func asObservable() -> Future<Element> {
         let promise = Promise<Element>()
         Signal<Element> { value in
-            promise.resolve(with: value)
+            promise.resolve(value)
         }.subscribe(genenic: self)
         return promise
     }

@@ -18,16 +18,16 @@ extension Future {
                     future.observe { result in
                         switch result {
                         case .success(let value):
-                            promise.resolve(with: value)
+                            promise.resolve(value)
                         case .failure(let error):
-                            promise.reject(with: error)
+                            promise.reject(error)
                         }
                     }
                 } catch {
-                    promise.reject(with: error)
+                    promise.reject(error)
                 }
             case .failure(let error):
-                promise.reject(with: error)
+                promise.reject(error)
             }
         }
         

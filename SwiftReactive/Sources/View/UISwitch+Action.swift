@@ -10,11 +10,11 @@ import UIKit
 
 extension UISwitch {
     
-    public func action(_ controlEvents: UIControl.Event = .valueChanged) -> Future<Bool> {
-        let promise = Promise<Bool>()
+    public func action(_ controlEvents: UIControl.Event = .valueChanged) -> Future<UISwitch> {
+        let promise = Promise<UISwitch>()
         self.removeTarget(nil, action: #selector(UIControlEvent.selector), for: controlEvents)
         let action = UIControlEvent(self, {
-            promise.resolve(with: true)
+            promise.resolve(self)
         })
         self.addTarget(action, action: #selector(UIControlEvent.selector), for: controlEvents)
         return promise
