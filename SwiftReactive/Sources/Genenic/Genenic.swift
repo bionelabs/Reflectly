@@ -35,18 +35,6 @@ open class Genenic<Element> {
     public init(_ value: Element) {
         self.value = value
     }
-        
-}
-
-extension Genenic {
-    
-    public func asObservable() -> Future<Element> {
-        let promise = Promise<Element>()
-        Signal<Element> { value in
-            promise.resolve(value)
-        }.subscribe(genenic: self)
-        return promise
-    }
     
     @discardableResult
     public
@@ -56,5 +44,7 @@ extension Genenic {
         }.subscribe(genenic: self)
         return self
     }
+        
 }
+
 

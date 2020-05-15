@@ -14,7 +14,7 @@ public class Variable<Value>: Future<Value> {
         }
     }
     
-    private var variable: Genenic<Value>
+    var variable: Genenic<Value>
     
     public required init(_ value: Value) {
         self.value = value

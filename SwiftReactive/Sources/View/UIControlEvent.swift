@@ -14,14 +14,15 @@ class UIControlEvent {
     
     required init(_ target: Any, _ action: @escaping () -> ()) {
         self._action = action
-        objc_setAssociatedObject(target, String(format: "[%d]", arc4random()), self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        objc_setAssociatedObject(target, String(format: "[%d]", arc4random()), self, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
     }
     
-    @objc dynamic func selector() {
+    @objc func selector() {
         self._action()
     }
     
     deinit {
         objc_removeAssociatedObjects(self)
+        print(self,"deinit")
     }
 }

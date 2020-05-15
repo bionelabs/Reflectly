@@ -11,16 +11,49 @@ import Variable
 
 class ViewController: UIViewController {
     
+    let button: Button = {
+       let button = Button()
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+        button.setTitle("A", for: .normal)
+        button.backgroundColor = .red
+        return button
+    }()
+    
+    let variable: Variable<String> = Variable<String>("0")
+    
     override func loadView() {
         super.loadView()
+        self.view.backgroundColor = .white
+        self.view.addSubview(button)
+        
+        variable
+            .throttle(interval: 1500)
+            .map {$0 + "_\(self.description)"}
+            .observe { (result) in
+            guard case let .success(value) = result else { return }
+            print("🍄🍄🍄 varialbe:", value, Date())
+        }
+        
+        button.action().observe { [weak self] (event) in
+            guard let `self` = self else { return}
+            let vc = AViewController()
+            vc.variable = self.variable
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         
         //self.testVarialbeOberver()
-        self.testObservable()
+        //self.testObservable()
         //self.testPromies()
         //self.testOptional()
         
+        
+        
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
     func testOptional() {
         let promies: Promise<String?> = Promise<String?>()
@@ -158,5 +191,8 @@ class ViewController: UIViewController {
     }
     
     
+    deinit {
+        print(self, "deinit")
+    }
 }
 

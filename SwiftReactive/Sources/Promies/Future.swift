@@ -11,8 +11,13 @@ public class Future<Value> {
     public typealias Event = Swift.Result<Value, Swift.Error>
     
     internal var result: Event? {
-        didSet { result.map(onChange) }
+        didSet {
+            result.map(report)
+            if case let .success(value) = self.result { self._value = value }
+        }
     }
+    
+    var _value: Value?
     
     private var callbacks = [(Event) -> Void]()
     
@@ -23,7 +28,7 @@ public class Future<Value> {
         callbacks.append(callback)
     }
     
-    private func onChange(result: Event) {
+    private func report(result: Event) {
         callbacks.forEach { $0(result) }
     }
 }

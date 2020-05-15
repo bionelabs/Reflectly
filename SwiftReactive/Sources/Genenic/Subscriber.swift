@@ -9,7 +9,7 @@
 import UIKit
 
 /* Box */
-internal class Subscriber<Element> {
+public class Subscriber<Element> {
 
     var signal: Signal<Element>?
     
