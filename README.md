@@ -9,7 +9,7 @@ I have known my library not good. But I learn a lot about reactive programming.
 1. <b>Promise</b>: Function response in queue with operators
 2. <b>Variable</b>: Variable reactive when it changed 
 3. <b>UI Reactive</b>: Button, Switch, Custome by Promise
-4. <b>Object Cache Reactive</b>: Cache object from request and make reactive change to update UI
+4. <b>Object Cache Reactive (Store, Pool)</b>: Cache object from request and make reactive change to update UI
 
 ## Operators
 - throttle
