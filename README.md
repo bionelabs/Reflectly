@@ -64,6 +64,11 @@ I have known my library not good. But I learn a lot about reactive programming.
         } catch let error {
             print("error:", error)
         }
+        
+        // Result:
+        // ober1: 17
+        // ober2: 20
+        // add1 + add2: 37
 
 ```
 
