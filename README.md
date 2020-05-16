@@ -103,7 +103,10 @@ class ViewController: UIViewController {
         self.view.backgroundColor = .white
         self.view.addSubview(button)
         
-        button.action().observe { [weak self] (event) in
+        button
+        .action()
+        .debounce(interval: 200)
+        .observe { [weak self] (event) in
             guard let `self` = self else { return}
             let vc = AViewController()
             vc.variable = self.variable
