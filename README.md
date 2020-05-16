@@ -10,6 +10,13 @@ I have known my library not good. But I learn a lot about reactive programming.
 2. <b>Variable</b>: Variable reactive when it changed 
 3. <b>UI Reactive</b>: Button, Switch, Custome by Promise
 
+## Operators
+- throttle
+- debounce
+- filter
+- distinct
+- map
+
 ## Promise
 
 ```swift
@@ -18,7 +25,7 @@ I have known my library not good. But I learn a lot about reactive programming.
             .map { $0 }
             .throttle(interval: 500)
             .debounce(interval: 200)
-            .filer { ($0?.contains("3") ?? false) }
+            .filter { ($0?.contains("3") ?? false) }
             .distinct()
             .observe { (result) in
                 guard case let .success(vax) = result else { return }
@@ -42,7 +49,7 @@ let variable: Variable<Int> = Variable<Int>(0)
             .map { $0 + 1212 }
             .throttle(interval: 500)
             .debounce(interval: 200)
-            .filer {$0 > 10}
+            .filter {$0 > 10}
             .observe { (result) in
                 guard case let .success(vax) = result else { return }
                 print("result success:", vax)
