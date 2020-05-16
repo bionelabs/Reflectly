@@ -119,6 +119,7 @@ class ViewController: UIViewController {
 2. [Under the hood of Futures and Promises in Swift](https://www.swiftbysundell.com/articles/under-the-hood-of-futures-and-promises-in-swift/)
 3. [Promises by Google](https://github.com/google/promises/blob/master/g3doc/index.md#creating-promises)
 4. [RxSwift](https://github.com/ReactiveX/RxSwift/)
+5. [Promise Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 
 ## Contact
