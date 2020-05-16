@@ -40,6 +40,34 @@ I have known my library not good. But I learn a lot about reactive programming.
         promies.resolve("32")
 ```
 
+## Make a promise function
+
+```swift
+    func add(a: Int, b: Int) -> Future<Int> {
+        let promise = Promise<Int>()
+        promise.resolve(a + b)
+        return promise
+    }
+
+```
+
+## Await
+
+```swift
+
+        do {
+            let add1: Int = try await { self.add(a: 8, b: 9) }
+            print("ober1:", add1)
+            let add2: Int = try await { self.add(a: 5, b: 15) }
+            print("ober2:", add2)
+            print("add1 + add2:", add1 + add2)
+        } catch let error {
+            print("error:", error)
+        }
+
+```
+
+
 ## Variable
 
 ```swift
