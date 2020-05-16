@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Reflectly"
-  spec.version      = "0.0.2"
+  spec.version      = "1.0"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
@@ -16,6 +16,6 @@ This CocoaPods library helps you perform calculation.
   spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/onebuffer/Reflectly.git", :tag => "#{spec.version}" }
-  spec.source_files  = "AppExtensionKit/**/*.{h,m,swift}"
+  spec.source_files  = "Reflectly/**/*.{h,m,swift}"
 
 end

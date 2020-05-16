@@ -21,8 +21,26 @@ class ViewController: UIViewController {
     
     let variable: Variable<String> = Variable<String>("0")
     
+    func add(a: Int, b: Int) -> Future<Int> {
+        let promise = Promise<Int>()
+        promise.resolve(a + b)
+        return promise
+    }
+    
     override func loadView() {
         super.loadView()
+        
+        do {
+            let add1: Int = try await { self.add(a: 8, b: 9) }
+            print("ober1:", add1)
+            let add2: Int = try await { self.add(a: 5, b: 15) }
+            print("ober2:", add2)
+            print("add1 + add2:", add1 + add2)
+        } catch let error {
+            print("error:", error)
+        }
+        
+        
         self.view.backgroundColor = .white
         self.view.addSubview(button)
         

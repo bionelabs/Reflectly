@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05629EC4246FE5CB0095231A /* Future+Await.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05629EC3246FE5CB0095231A /* Future+Await.swift */; };
 		05996F7E246F9626008271D4 /* Reflectly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05996F74246F9626008271D4 /* Reflectly.framework */; };
 		05996F83246F9626008271D4 /* ReflectlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05996F82246F9626008271D4 /* ReflectlyTests.swift */; };
 		05996F85246F9626008271D4 /* Reflectly.h in Headers */ = {isa = PBXBuildFile; fileRef = 05996F77246F9626008271D4 /* Reflectly.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		05629EC5246FE5F80095231A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05996F6B246F9626008271D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05996F73246F9626008271D4;
+			remoteInfo = Reflectly;
+		};
 		05996F7F246F9626008271D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05996F6B246F9626008271D4 /* Project object */;
@@ -66,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05629EC3246FE5CB0095231A /* Future+Await.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Future+Await.swift"; sourceTree = "<group>"; };
 		05996F74246F9626008271D4 /* Reflectly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reflectly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05996F77246F9626008271D4 /* Reflectly.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reflectly.h; sourceTree = "<group>"; };
 		05996F78246F9626008271D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,6 +216,7 @@
 		05996F8F246F963F008271D4 /* Promies */ = {
 			isa = PBXGroup;
 			children = (
+				05629EC3246FE5CB0095231A /* Future+Await.swift */,
 				05996F90246F963F008271D4 /* Future.swift */,
 				05996F91246F963F008271D4 /* Generic+Future.swift */,
 				05996F92246F963F008271D4 /* Promise.swift */,
@@ -355,6 +365,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				05629EC6246FE5F80095231A /* PBXTargetDependency */,
 			);
 			name = ReflectlyDemo;
 			productName = ReflectlyDemo;
@@ -515,6 +526,7 @@
 				05996FB4246F963F008271D4 /* Chained.swift in Sources */,
 				05996FB9246F963F008271D4 /* Database.swift in Sources */,
 				05996FAE246F963F008271D4 /* FlatMap.swift in Sources */,
+				05629EC4246FE5CB0095231A /* Future+Await.swift in Sources */,
 				05996FBF246F963F008271D4 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,6 +568,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		05629EC6246FE5F80095231A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05996F73246F9626008271D4 /* Reflectly */;
+			targetProxy = 05629EC5246FE5F80095231A /* PBXContainerItemProxy */;
+		};
 		05996F80246F9626008271D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05996F73246F9626008271D4 /* Reflectly */;
