@@ -1,15 +1,15 @@
 //
-//  SwiftReactiveTests.swift
-//  SwiftReactiveTests
+//  ReflectlyDemoTests.swift
+//  ReflectlyDemoTests
 //
-//  Created by Cao Phuoc Thanh on 5/14/20.
+//  Created by Cao Phuoc Thanh on 5/16/20.
 //  Copyright © 2020 Cao Phuoc Thanh. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftReactive
+@testable import ReflectlyDemo
 
-class SwiftReactiveTests: XCTestCase {
+class ReflectlyDemoTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

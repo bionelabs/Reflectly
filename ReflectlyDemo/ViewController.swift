@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Variable
+import Reflectly
 
 class ViewController: UIViewController {
     
