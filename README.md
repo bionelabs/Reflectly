@@ -113,3 +113,15 @@ class ViewController: UIViewController {
 }
 
 ```
+
+### Reference
+1. [map, flatMap and compactMap](https://www.hackingwithswift.com/articles/205/whats-the-difference-between-map-flatmap-and-compactmap)
+2. [Under the hood of Futures and Promises in Swift](https://www.swiftbysundell.com/articles/under-the-hood-of-futures-and-promises-in-swift/)
+3.[Promises by Google](https://github.com/google/promises/blob/master/g3doc/index.md#creating-promises)
+4. [RxSwift](https://github.com/ReactiveX/RxSwift/)
+
+
+## Contact
+- Email: caophuocthanh@gmail.com
+- Site: https://onebuffer.com
+- Linkedin: https://www.linkedin.com/in/caophuocthanh/
