@@ -28,7 +28,7 @@ I have known my library not good. But I learn a lot about reactive programming.
 - [ ] View Guesture
 - [ ] View Constraint
 - [ ] View properties
-- [ ]
+- [ ] ...
 
 ## Issues
 - [ ] promise.resolve() 
