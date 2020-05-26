@@ -1,3 +1,5 @@
+<center><img src="https://github.com/onebuffer/Reflectly/blob/master/Resources/Reflectly.png" width="60%"></center>
+
 # Swift Reflectly
 
 I learn how to make a reactive function, variable, and custom UI with closure for action.
