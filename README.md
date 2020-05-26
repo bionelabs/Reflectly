@@ -13,11 +13,25 @@ I have known my library not good. But I learn a lot about reactive programming.
 5. <b>Promise Await</b>: wait multi response of Promise function
 
 ## Operators
-- throttle
-- debounce
-- filter
-- distinct
-- map
+- [x] throttle
+- [x] debounce
+- [x] filter
+- [x] distinct
+- [x] map
+- [ ] flatMap
+
+## UIView
+- [x] Button
+- [x] Switch
+- [ ] TextField
+- [ ] TextView
+- [ ] View Guesture
+- [ ] View Constraint
+- [ ] View properties
+- [ ] ...
+
+## Issues
+- [ ] promise.resolve() 
 
 ## Promise
 
